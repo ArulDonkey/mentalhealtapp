@@ -28,7 +28,11 @@ class _HomePageState extends State<HomePage> {
                 Icons.message,
               ),
               label: ''),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person,
+              ),
+              label: ''),
         ],
       ),
       body: SafeArea(

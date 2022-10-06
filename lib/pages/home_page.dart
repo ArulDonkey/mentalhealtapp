@@ -21,16 +21,25 @@ class _HomePageState extends State<HomePage> {
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
+                color: Colors.grey,
+              ),
+              label: ''),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.border_all_sharp,
+                color: Colors.grey,
               ),
               label: ''),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.message,
+                color: Colors.grey,
               ),
               label: ''),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
+                color: Colors.grey,
               ),
               label: ''),
         ],
@@ -231,8 +240,15 @@ class _HomePageState extends State<HomePage> {
             ),
             Expanded(
               child: Container(
-                padding: EdgeInsets.all(25),
-                color: Colors.grey[200],
+                padding: EdgeInsets.fromLTRB(30, 40, 35, 0),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(40),
+                    topRight: Radius.circular(30),
+                  ),
+                  color: Colors.white,
+                ),
                 child: Center(
                   child: Column(
                     children: [
